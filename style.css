@@ -72,14 +72,131 @@ body {
 .mid_part_container {
   margin: 1rem 0rem;
 }
-.mid_part_container .lg_bd_container {
-  background-color: red;
+.lg_bd_container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 0.3rem;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
 }
-.mid_part_container .lg_bd_container .lg_bd_text_section {
+.lg_bd_container .lg_bd_text_section {
   display: flex;
-  column-gap: 50px;
+  column-gap: 5px;
+  align-items: center;
+}
+.lg_bd_container h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.lg_bd_container p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.lg_bd_container .btn_container button {
+  border: 1px solid gray;
+  background-color: white;
+  padding: 0.4rem 0.6rem;
+  outline: none;
+  cursor: pointer;
+}
+.lg_bd_container .btn_container button a {
+  color: rgba(0, 0, 0, 7);
+}
+
+.job_container {
+  background-color: white;
+  padding: 1rem 0.3rem;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.job_container .job_desc_section {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.job_container .job_desc_section h3 {
+  margin-bottom: 0.5rem;
+}
+
+.job_desc_section .job_details_section .job_footer {
+  display: flex;
+  gap: 20px;
+}
+.job_container .job_btn_section {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 1rem auto;
+}
+.job_btn_section button {
+  padding: 0.3rem 0.9rem;
+  border-radius: 0.8rem;
+  outline: none;
+  border: none;
+}
+.job_btn_section .full_time {
+  background-color: #dde8f8;
+  color: #329fe6;
+}
+.job_btn_section .urgent {
+  background-color: #fef2d9;
+  color: #fbca64;
+}
+.job_btn_section .featured {
+  background-color: #2e9852;
+  color: white;
+}
+.admin_button button {
+  background-color: #05509d;
+  padding: 0.6rem 1rem;
+  color: white;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.9;
+  letter-spacing: 0.1rem;
+  margin: 2rem auto;
+  display: block;
+  border-radius: 0.8rem;
+  font-weight: 600;
+}
+
+.admin_success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+  margin-bottom: 1rem;
+}
+.admin_success p:nth-child(2) {
+  color: #05509d;
+  font-weight: 600;
+}
+.admin_expiring {
+  display: flex;
+  column-gap: 2px;
+  align-items: center;
+  justify-content: center;
+}
+
+.best_wishes {
+  background-color: white;
+  padding: 0.5rem 0.3rem;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  margin: 1rem;
+  text-align: center;
+}
+.best_wishes h4 {
+  color: #ba223d;
+  font-weight: 600;
+  font-size: 20px;
 }
 .footer {
   font-size: 14px;
@@ -96,6 +213,12 @@ body {
   }
   .template_inner_container {
     width: 450px;
+  }
+  .lg_bd_container .btn_container button {
+    font-size: 0.6rem;
+  }
+  .job_container .job_footer p {
+    font-size: 0.9rem;
   }
 }
 
@@ -119,6 +242,18 @@ body {
     font-size: 22px;
   }
   .mid_part .all_btn button {
+    font-size: 16px;
+  }
+  .lg_bd_container {
+    flex-direction: column;
+    align-items: start;
+    padding-bottom: 0.5rem;
+  }
+  .lg_bd_container .btn_container {
+    align-self: center;
+    margin: 0.3rem 0rem;
+  }
+  .job_container .job_details_section h3 {
     font-size: 16px;
   }
 }
