@@ -1,0 +1,124 @@
+body {
+  display: grid;
+  place-items: center;
+}
+.template_container {
+  width: 553px;
+  margin: 5rem 1rem;
+}
+
+.template_inner_container {
+  width: 553px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 1.4rem;
+}
+.title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.secondary_title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: -0.4rem;
+}
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 35px;
+  margin-top: 1rem;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 1);
+}
+.description a {
+  color: black;
+}
+/* for user  */
+.mid_part {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.mid_part .description_text {
+  font-size: 30px;
+  color: #05509d;
+  font-weight: 600;
+  margin: 10px 0rem;
+}
+.mid_part .all_btn {
+  display: flex;
+  gap: 10px;
+}
+.mid_part .all_btn button {
+  background-color: #05509d;
+  padding: 0.6rem 1rem;
+  color: white;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.9;
+  letter-spacing: 0.1rem;
+}
+.mid_part .all_btn .common {
+  border-radius: 0.8rem;
+}
+.mid_part .all_btn .others_btn {
+  border-radius: 0.2rem;
+  margin: 2rem 0rem;
+}
+/* for admin  */
+.mid_part_container {
+  margin: 1rem 0rem;
+}
+.mid_part_container .lg_bd_container {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+}
+.mid_part_container .lg_bd_container .lg_bd_text_section {
+  display: flex;
+  column-gap: 50px;
+}
+.footer {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 44px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+}
+/* For Medium Devices (Tablets) */
+@media screen and (max-width: 992px) {
+  .template_container {
+    width: 450px;
+  }
+  .template_inner_container {
+    width: 450px;
+  }
+}
+
+/* For Small Devices (Mobile Phones) */
+@media screen and (max-width: 576px) {
+  .template_container {
+    width: 100vw !important;
+    margin: 3rem auto;
+  }
+  .template_inner_container {
+    width: 100vw !important;
+    margin: 3rem auto;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .mid_part .description_text {
+    font-size: 22px;
+  }
+  .mid_part .all_btn button {
+    font-size: 16px;
+  }
+}
