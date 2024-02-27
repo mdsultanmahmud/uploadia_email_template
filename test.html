@@ -33,56 +33,30 @@
         margin-top: 0.5rem;
       }
 
-      .common_btn {
-        background-color: #05509d;
-        color: #fff;
-        font-size: 18px;
-        border: none;
-        outline: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        text-decoration: none;
-      }
       .box_shadow_container {
         border: 1px solid #dadce0;
         border-radius: 8px;
         width: 100%;
         padding: 0.8rem 0.4rem;
       }
-      .best_wishes {
-        border: 1px solid #dadce0;
-        border-radius: 8px;
-        padding: 0.8rem 0.4rem;
-        margin: 1rem;
+
+      .meeting_title {
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #05509d;
         text-align: center;
       }
-      .best_wishes p {
-        margin: 0;
-        padding: 0;
-      }
-      .best_wishes h4 {
-        margin: 0;
-        padding: 0;
-        color: #ba223d;
-        font-weight: 600;
-        font-size: 20px;
-      }
-      .admin_expiring {
+      .meeting_create_inner {
         display: flex;
-        column-gap: 2px;
-        align-items: center;
-        justify-content: center;
+        column-gap: 10px;
+        border: 1px solid #dadce0;
+        border-radius: 8px;
+        margin: 0 auto;
+        padding: 0.5rem 1rem;
       }
-      .mid_part_job_alert {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: white;
-        padding: 1rem;
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-        border-radius: 0.5rem;
+      .meeting_icons {
+        width: 100%;
       }
-
       @media screen and (min-width: 600px) {
         .v2sp {
           padding: 6px 30px 0px;
@@ -179,7 +153,7 @@
                         font-weight: 600;
                       "
                     >
-                      Hello,
+                      Hello, {{}}
                     </p>
                   </div>
 
@@ -192,48 +166,383 @@
                       text-align: left;
                     "
                   >
-                    Exciting news! We have found a potential match for you based
-                    on your preferences.
+                    We're excited to inform you that a new meeting has been
+                    scheduled by {{employer_name}} regarding the job opportunity
+                    "{{job_title}}".
                   </p>
+                  <div class="meeting_creating">
+                    <p class="meeting_title">New Meeting Scheduled</p>
+                    <div class="meeting_create_inner">
+                      <div>
+                        <div
+                          style="
+                            border-right: 2px solid black;
+                            border-left: 2px solid black;
+                            border-radius: 0.8rem;
+                          "
+                        >
+                          <p
+                            style="
+                              margin: 0;
+                              padding: 0.4rem 0.8rem;
+                              background-color: rgba(0, 0, 0, 0.87);
+                              color: white;
+                              border-radius: 0.7rem;
+                            "
+                          >
+                            February
+                          </p>
+                          <p
+                            style="
+                              font-weight: 700;
+                              color: orange;
+                              font-size: 30px;
+                              margin: 0;
+                              padding: 0.5rem 0rem;
+                            "
+                          >
+                            23
+                          </p>
+                          <p
+                            style="
+                              margin: 0;
+                              padding: 0.4rem 0.8rem;
+                              background-color: rgba(0, 0, 0, 0.87);
+                              color: white;
+                              border-radius: 0.7rem;
+                              font-size: 20px;
+                            "
+                          >
+                            2024
+                          </p>
+                        </div>
+                      </div>
+                      <div class="meeting_icons">
+                        <div
+                          style="
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                          "
+                        >
+                          <div
+                            style="
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: center;
+                              align-items: center;
+                            "
+                          >
+                            <img
+                              src="https://uploadea.ambition-cloud.com/cdn/lg_logo.png"
+                              alt=""
+                            />
+                            <p style="font-weight: 600; font-size: 16px">
+                              LG Bangladesh
+                            </p>
+                          </div>
+                          <div
+                            style="
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: center;
+                              align-items: center;
+                            "
+                          >
+                            <img
+                              src="https://uploadea.ambition-cloud.com/cdn/hand_logo.png"
+                              alt=""
+                            />
+                          </div>
+                          <div
+                            style="
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: center;
+                              align-items: center;
+                            "
+                          >
+                            <img
+                              src="https://uploadea.ambition-cloud.com/cdn/person.png"
+                              alt=""
+                            />
+                            <p style="font-weight: 600; font-size: 16px">
+                              John Smith
+                            </p>
+                          </div>
+                        </div>
+                        <hr style="margin: 0.5rem 0rem" />
+                        <div
+                          style="
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                          "
+                          id="time_she"
+                        >
+                          <div
+                            style="
+                              display: flex;
+                              column-gap: 6px;
+                              align-items: center;
+                            "
+                          >
+                            <img
+                              src="https://uploadea.ambition-cloud.com/cdn/location.png"
+                              alt=""
+                              style="width: 20px"
+                            />
+                            <div>
+                              <p
+                                style="
+                                  font-weight: 600;
+                                  margin: 0;
+                                  text-align: left;
+                                "
+                              >
+                                Location:
+                              </p>
+                              <p style="margin: 0; text-align: left">Online</p>
+                            </div>
+                          </div>
+                          <div
+                            style="
+                              display: flex;
+                              column-gap: 6px;
+                              align-items: center;
+                            "
+                          >
+                            <img
+                              src="https://uploadea.ambition-cloud.com/cdn/diamond.png"
+                              alt=""
+                              style="width: 20px"
+                            />
+                            <div>
+                              <p
+                                style="
+                                  font-weight: 600;
+                                  margin: 0;
+                                  text-align: left;
+                                "
+                              >
+                                Duration: :
+                              </p>
+                              <p style="margin: 0; text-align: left">
+                                20 Minutes
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            style="
+                              display: flex;
+                              column-gap: 6px;
+                              align-items: center;
+                            "
+                          >
+                            <img
+                              src="https://uploadea.ambition-cloud.com/cdn/Watch.png"
+                              alt=""
+                              style="width: 20px"
+                            />
+                            <div>
+                              <p
+                                style="
+                                  font-weight: 600;
+                                  margin: 0;
+                                  text-align: left;
+                                "
+                              >
+                                Time:
+                              </p>
+                              <p style="margin: 0; text-align: left">
+                                16:24 UTC+6
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      style="
+                        display: flex;
+                        column-gap: 6px;
+                        align-items: center;
+                        background-color: #05509d;
+                        padding: 0.6rem 1rem;
+                        color: white;
+                        font-size: 20px;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        opacity: 0.9;
+                        letter-spacing: 0.1rem;
+                        margin-bottom: 0.3rem;
+                        display: block;
+                        border-radius: 0.8rem;
+                        font-weight: 600;
+                        margin: 2rem 0rem;
+                      "
+                    >
+                      <img
+                        src="https://uploadea.ambition-cloud.com/cdn/refresh.png"
+                        alt=""
+                      />
+                      <span>Request for Reschedule</span>
+                    </button>
+                  </div>
+                  <p
+                    style="
+                      font-weight: 700;
+                      font-size: 18px;
+                      text-align: left;
+                      margin-bottom: 0.5rem;
+                    "
+                  >
+                    Meeting associated with the Job:
+                  </p>
+
                   <table
+                    class="box_shadow_container"
                     cellspacing="0"
                     cellpadding="0"
                     border="0"
                     align="center"
-                    style="width: 100%; margin-bottom: 1rem"
+                    style="border-radius: 0.5rem; width: 100%"
                   >
                     <tr>
-                      <td align="center">
-                        <img
-                          src="https://uploadea.ambition-cloud.com/cdn/circle_bag.png"
-                          alt=""
-                          style="width: 100px"
-                        />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="center" style="padding-top: 10px">
-                        <p
-                          style="
-                            margin: 0;
-                            color: #05509d;
-                            font-size: 18px;
-                            font-weight: bold;
-                          "
+                      <td>
+                        <table
+                          class="job_desc_section"
+                          cellspacing="0"
+                          cellpadding="0"
+                          border="0"
                         >
-                          Job Alert
-                        </p>
+                          <tr>
+                            <td style="padding-right: 10px">
+                              <img
+                                src="https://uploadea.ambition-cloud.com/cdn/lg_logo.png"
+                                alt="lg logo"
+                                style="max-width: 100%; height: auto"
+                              />
+                            </td>
+                            <td>
+                              <table
+                                width="100%"
+                                cellspacing="0"
+                                cellpadding="0"
+                                border="0"
+                              >
+                                <tr>
+                                  <td>
+                                    <h3 style="margin: 0">
+                                      Software Application Architecture
+                                    </h3>
+                                    <div
+                                      style="
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 10px;
+                                      "
+                                    >
+                                      <div
+                                        style="
+                                          display: flex;
+                                          align-items: center;
+                                          gap: 5px;
+                                        "
+                                      >
+                                        <img
+                                          src="https://uploadea.ambition-cloud.com/cdn/bag.png"
+                                          alt=""
+                                          style="max-width: 20px; height: auto"
+                                        />
+                                        <p style="margin: 0">Development</p>
+                                      </div>
+                                      <div
+                                        style="
+                                          display: flex;
+                                          align-items: center;
+                                          gap: 5px;
+                                        "
+                                      >
+                                        <img
+                                          src="https://uploadea.ambition-cloud.com/cdn/bag.png"
+                                          alt=""
+                                          style="max-width: 20px; height: auto"
+                                        />
+                                        <p style="margin: 0">
+                                          $5000 - $6000 / month
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
                       </td>
                     </tr>
                     <tr>
-                      <td align="center" style="padding-top: 10px">
-                        <p style="margin: 0; font-size: 16px">
-                          Found Match for Your Below Alert
-                        </p>
+                      <td>
+                        <table
+                          class="job_btn_section"
+                          cellspacing="0"
+                          cellpadding="0"
+                          border="0"
+                          style="width: 100%; margin-top: 1rem"
+                        >
+                          <tr>
+                            <td style="padding-right: 5px">
+                              <button
+                                class="full_time"
+                                style="
+                                  background-color: #dde8f8;
+                                  color: #329fe6;
+                                  padding: 0.3rem 0.9rem;
+                                  border-radius: 0.8rem;
+                                  outline: none;
+                                  border: none;
+                                "
+                              >
+                                Full Time
+                              </button>
+                            </td>
+                            <td style="padding: 0 2.5px">
+                              <button
+                                class="urgent"
+                                style="
+                                  background-color: #fef2d9;
+                                  color: #fbca64;
+                                  padding: 0.3rem 0.9rem;
+                                  border-radius: 0.8rem;
+                                  outline: none;
+                                  border: none;
+                                "
+                              >
+                                Urgent
+                              </button>
+                            </td>
+                            <td style="padding-left: 5px">
+                              <button
+                                class="featured"
+                                style="
+                                  background-color: #2e9852;
+                                  color: white;
+                                  padding: 0.3rem 0.9rem;
+                                  border-radius: 0.8rem;
+                                  outline: none;
+                                  border: none;
+                                "
+                              >
+                                Featured
+                              </button>
+                            </td>
+                          </tr>
+                        </table>
                       </td>
                     </tr>
                   </table>
-
                   <button
                     style="
                       background-color: #05509d;
@@ -249,84 +558,12 @@
                       display: block;
                       border-radius: 0.8rem;
                       font-weight: 600;
-                      margin-bottom: 1rem;
+                      margin: 2rem 0rem;
                     "
                   >
                     View Job
                   </button>
-                  <div class="mid_part_job_alert">
-                    <div>
-                      <h4 style="font-weight: 700; font-size: 20px">
-                        {{alert_title}}
-                      </h4>
-                      <button
-                        style="
-                          background-color: #05509d;
-                          padding: 0.6rem 1rem;
-                          color: white;
-                          font-size: 20px;
-                          border: none;
-                          outline: none;
-                          cursor: pointer;
-                          opacity: 0.9;
-                          letter-spacing: 0.1rem;
-                          margin-bottom: 0.3rem;
-                          display: block;
-                          border-radius: 0.8rem;
-                          font-weight: 600;
-                          margin: 2rem 0rem;
-                        "
-                      >
-                        View Details
-                      </button>
-                    </div>
-                    <div
-                      style="
-                        border-right: 2px solid black;
-                        border-left: 2px solid black;
-                        border-radius: 0.8rem;
-                        text-align: center;
-                      "
-                    >
-                      <p
-                        style="
-                          margin: 0;
-                          padding: 0.4rem 0.8rem;
-                          background-color: rgba(0, 0, 0, 0.87);
-                          color: white;
-                          border-radius: 0.7rem;
-                          text-transform: uppercase;
-                        "
-                      >
-                        Found
-                      </p>
-                      <p
-                        style="
-                          font-weight: 700;
-                          color: orange;
-                          font-size: 30px;
-                          margin: 0;
-                          padding: 0.5rem 0rem;
-                          text-align: center;
-                        "
-                      >
-                        23
-                      </p>
-                      <p
-                        style="
-                          margin: 0;
-                          padding: 0.4rem 1.5rem;
-                          background-color: rgba(0, 0, 0, 0.87);
-                          color: white;
-                          border-radius: 0.7rem;
-                          font-size: 20px;
-                          text-transform: uppercase;
-                        "
-                      >
-                        Jobs
-                      </p>
-                    </div>
-                  </div>
+
                   <p>
                     This is an automated email. No response necessary. For
                     assistance, contact support@website.com.
